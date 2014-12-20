@@ -7,7 +7,20 @@ eventsApp.controller('EventController',
       location: {
         address: 'Bo'
       },
-      imageUrl: '/img/farewell.png'
+      imageUrl: '/img/farewell.png',
+      sessions: [
+        {
+          name: 'Welcome drinks'
+        },
+        {
+          name: 'Moving to the restaurant'
+        },
+        {
+          name: 'Spirits time'
+        }
+
+
+      ]
     }
   }
 );
