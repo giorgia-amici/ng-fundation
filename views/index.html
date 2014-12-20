@@ -19,15 +19,16 @@
     </div>
     <div ng-controller="EventController" style="padding-left:20px; padding-right:20px">
       <img ng-src="{{event.imageUrl}}">
-      <!-- it delays the displey of the image until angular has actually time to execute the binding expression -->
+      <!-- it delays the display of the image until angular has actually time to execute the binding expression -->
       <div class="row">
         <div class="span11">
-          <h2 ng-style="mystyle">{{event.name}}</h2>
+          <h2 ng-style="mystyle">{{event.name | uppercase}}</h2>
          <!-- <h2 ng-bind="event.name"></h2> -->
     <!--      <h2 ng-bind-template="{{event.name}} {{event.date}}"></h2> -->
         </div>
       </div>
       <!-- <div ng-bind-html-unsafe="snippet"> some title </div> -->
+      <button class="btn" ng-disabled="buttonDisabled">Disabled </button>
       <h2 ng-show="boolValue"> Show me </h2>
       <h2 ng-hide="boolValue"> Hide This </h2>   
       <div ng-bind-html="snippet"> some title </div>
@@ -48,8 +49,13 @@
       </div>
       <hr />
       <h3> Sessions </h3>
+      Order by:
+      <select ng-model="sortorder" class="input-small"> 
+      <option selected value="name">Name</option>
+      <option value="-upVoteCount">Votes</option>
+      </select>
       <ul class="thumbnails">
-        <li ng-repeat="session in event.sessions">
+        <li ng-repeat="session in event.sessions | orderBy:sortorder">
           <div class="row session">
             <div class="spanO well votingWidget">
               <div class="votingButton" ng-click="upVoteSession(session)">
@@ -77,7 +83,6 @@
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-
   <script src="app.js"></script>
   <script src="controllers/EventController.js"></script>
 </body>

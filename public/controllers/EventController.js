@@ -1,8 +1,11 @@
 eventsApp.controller('EventController',
   function EventController($scope) {
+    // $scope.sortorder = '-upVoteCount'
+    $scope.sortorder = "name";
     $scope.snippet = '<span style="color:red">hi there</span>'; 
     $scope.boolValue = true;
-    $scope.mystyle = {color:'red'};
+    $scope.mystyle = {color:'red'}; 
+    $scope.buttonDisabled = false;
     $scope.event = {
       name: 'Farewell party',
       date: '19/12/2014',
