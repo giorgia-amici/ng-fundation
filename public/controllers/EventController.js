@@ -1,5 +1,8 @@
 eventsApp.controller('EventController',
   function EventController($scope) {
+    $scope.snippet = '<span style="color:red">hi there</span>'; 
+    $scope.boolValue = true;
+    $scope.mystyle = {color:'red'};
     $scope.event = {
       name: 'Farewell party',
       date: '19/12/2014',
@@ -30,6 +33,8 @@ eventsApp.controller('EventController',
       ]
     }
 
+
+// with the  two methods below you actually manipulate the data according to your user input
     $scope.upVoteSession = function(session){
       session.upVoteCount++;
     };
