@@ -8,15 +8,21 @@ eventsApp.controller('EventController',
         address: 'Bo'
       },
       imageUrl: '/img/farewell.png',
-      sessions: [
+      sessions  : [
         {
-          name: 'Welcome drinks'
+          name: 'Welcome drinks',
+          creator: 'Fabio',
+          duration: '30 mins'
         },
         {
-          name: 'Moving to the restaurant'
+          name: 'Moving to the restaurant',
+          creator: 'Giorgia',
+          duration: '1 hour'
         },
         {
-          name: 'Spirits time'
+          name: 'Spirits time',
+          creator: 'Fabio',
+          duration: '1 hour'
         }
 
 
