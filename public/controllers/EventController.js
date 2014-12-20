@@ -1,4 +1,4 @@
-angular.module('eventsApp').controller('EventController',
+eventsApp.controller('EventController',
   function EventController($scope) {
     $scope.event = {
       name: 'Farewell party',
@@ -6,7 +6,8 @@ angular.module('eventsApp').controller('EventController',
       time: '10.50pm',
       location: {
         address: 'Bo'
-      }
+      },
+      imageUrl: '/img/farewell.png'
     }
   }
 );
