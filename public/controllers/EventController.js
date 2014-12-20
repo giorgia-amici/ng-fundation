@@ -12,17 +12,20 @@ eventsApp.controller('EventController',
         {
           name: 'Welcome drinks',
           creator: 'Fabio',
-          duration: '30 mins'
+          duration: '30 mins',
+          upVoteCount: 0
         },
         {
           name: 'Moving to the restaurant',
           creator: 'Giorgia',
-          duration: '1 hour'
+          duration: '1 hour',
+          upVoteCount: 0
         },
         {
           name: 'Spirits time',
           creator: 'Fabio',
-          duration: '1 hour'
+          duration: '1 hour',
+          upVoteCount: 0
         }
 
 

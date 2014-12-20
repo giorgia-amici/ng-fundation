@@ -44,6 +44,17 @@
      <h3> Sessions </h3>
      <ul class"thumbnails">
        <li ng-repeat="session in event.sessions"> 
+          <div class="spanO well votingWidget">
+            <div class="votingButton">
+              <i class="icon-chevron-up icon-white"></i>
+            </div>
+            <div class="badge badge-inverse">
+                <div>{{session.upVoteCount}}</div>
+            </div>
+            <div class="votingButton">
+              <i class="icon-chevron-down"></i>
+            </div>
+          </div>
           <div class="row session">
             <div class="well span9">
                 <h4 class="well-title"> {{session.name}} </h4>
