@@ -16,21 +16,24 @@ eventsApp.controller('EventController',
       imageUrl: '/img/farewell.png',
       sessions  : [
         {
-          name: 'Welcome drinks beginning',
+          name: 'Welcome drinks',
+          when: 'beginning',
           creator: 'Fabio',
-          duration: '30 mins',
+          duration: 1,
           upVoteCount: 0
         },
         {
-          name: 'Moving to the restaurant middle',
+          name: 'Moving to the restaurant',
+          when: 'middle',
           creator: 'Giorgia',
-          duration: '1 hour',
+          duration: 2,
           upVoteCount: 0
         },
         {
-          name: 'Spirits time end',
+          name: 'Spirits time',
+          when: 'end',
           creator: 'Fabio',
-          duration: '1 hour',
+          duration: 3,
           upVoteCount: 0
         }
       ]
