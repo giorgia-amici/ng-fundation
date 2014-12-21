@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="eventsApp">
+<head>
+  <meta charset="utf-8">
+  <title>EVENTS APP</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body ng-cloak>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+        <li><a href="/newEvent">Create Event</a></li>
+        </ul>
+      </div>
+    </div>
+  <div ng-controller="editEventController" style="padding-left:20px; padding-right:20px">
+      <div class="container">
+        <h1> New Event </h1>
+        <hr />
+          <form>
+              <fieldset>
+                <label for="eventName"> Event Name: </label>
+                <input id="eventName" type="text" placeholder="Name of your Event" />
+                           <label for="eventName"> Event Name: </label>
+                <input id="eventName" type="text" placeholder="Name of your Event" />
+                           <label for="eventName"> Event Name: </label>
+                <input id="eventName" type="text" placeholder="Name of your Event" />
+                           <label for="eventName"> Event Name:</label>
+                <input id="eventName" type="text" placeholder="Name of your Event" />
+              </fieldset>
+          </form>
+      </div>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/EventController.js"></script>
+  <script src="filter.js"></script>
+</body>
+
+</html>

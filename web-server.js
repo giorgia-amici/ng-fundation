@@ -14,6 +14,10 @@ app.get('/', function(request, response){
   response.render('index')
 });
 
+app.get('/newEvent', function(request, response){
+  response.render('newEvent')
+});
+
 server.listen(3000, function(){
   console.log("Server listening on port 3000");
 });
