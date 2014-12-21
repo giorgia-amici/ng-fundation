@@ -26,14 +26,14 @@ eventsApp.controller('EventController',
           name: 'Moving to the restaurant',
           when: 'middle',
           creator: 'Giorgia',
-          duration: 2,
+          duration: 3,
           upVoteCount: 0
         },
         {
           name: 'Spirits time',
           when: 'end',
           creator: 'Fabio',
-          duration: 3,
+          duration: 2,
           upVoteCount: 0
         }
       ]
