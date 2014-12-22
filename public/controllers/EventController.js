@@ -1,5 +1,5 @@
 eventsApp.controller('EventController',
-  function EventController($scope) {
+  function EventController($scope, eventData) {
     // $scope.sortorder = '-upVoteCount'
     $scope.sortorder = "name";
     $scope.snippet = '<span style="color:red">hi there</span>';
@@ -8,11 +8,8 @@ eventsApp.controller('EventController',
       color: 'red'
     };
     $scope.buttonDisabled = false;
-    $scope.event = {
-
-    }
-
-
+    $scope.event = eventData.event;
+ 
     // with the  two methods below you actually manipulate the data according to your user input
     $scope.upVoteSession = function(session) {
       session.upVoteCount++;
