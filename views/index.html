@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body ng-cloak>
   <div class="container">
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-        <li><a href="/newEvent">Create Event</a></li>
+          <li><a href="/newEvent">Create Event</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -22,14 +24,14 @@
       <div class="row">
         <div class="span11">
           <h2 ng-style="mystyle">{{event.name | uppercase}}</h2>
-         <!-- <h2 ng-bind="event.name"></h2> -->
-    <!--      <h2 ng-bind-template="{{event.name}} {{event.date}}"></h2> -->
+          <!-- <h2 ng-bind="event.name"></h2> -->
+          <!--      <h2 ng-bind-template="{{event.name}} {{event.date}}"></h2> -->
         </div>
       </div>
       <!-- <div ng-bind-html-unsafe="snippet"> some title </div> -->
       <button class="btn" ng-disabled="buttonDisabled">Disabled </button>
       <h2 ng-show="boolValue"> Show me </h2>
-      <h2 ng-hide="boolValue"> Hide This </h2>   
+      <h2 ng-hide="boolValue"> Hide This </h2>
       <div ng-bind-html="snippet"> some title </div>
       <div class="row">
         <div class="span3">
@@ -47,18 +49,17 @@
         </div>
       </div>
       <hr />
-      <h3> Sessions </h3>
-      Order by:
-      <select ng-model="sortorder" class="input-small"> 
-      <option selected value="name">Name</option>
-      <option value="-upVoteCount">Votes</option>
+      <h3> Sessions </h3> Order by:
+      <select ng-model="sortorder" class="input-small">
+        <option selected value="name">Name</option>
+        <option value="-upVoteCount">Votes</option>
       </select>
       Show:
       <select ng-model="query.when" class="input medium">
-          <option selected value="">All</option>
-          <option selected value="beginning">Beginning</option>
-          <option selected value="middle">Middle</option>
-          <option selected value="end">End</option>
+        <option selected value="">All</option>
+        <option selected value="beginning">Beginning</option>
+        <option selected value="middle">Middle</option>
+        <option selected value="end">End</option>
       </select>
       <ul class="thumbnails">
         <li ng-repeat="session in event.sessions | orderBy:sortorder | filter:query">
