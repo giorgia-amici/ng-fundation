@@ -22,23 +22,24 @@
           <form>
               <fieldset>
                 <label for="eventName"> Event Name: </label>
-                <input id="eventName" type="text" placeholder="Name of your Event" />
+                <input id="eventName" type="text" ng-model="event.name" placeholder="Name of your Event" />
                            <label for="eventDate"> Event Date: </label>
-                <input id="eventDate" type="text" placeholder="format(mm/dd/yyyy)" />
+                <input id="eventDate" type="text" ng-model="event.date" placeholder="format(mm/dd/yyyy)" />
                            <label for="eventTime"> Event Time: </label>
-                <input id="eventTime" type="text" placeholder="Start and end Time" />
+                <input id="eventTime" type="text" ng-model="event.time" placeholder="Start and end Time" />
                            <label for="eventLocation"> Event Location:</label>
-                <input id="eventLocation" type="text" placeholder="Location for your event" />
+                <input id="eventLocation" type="text" ng-model="event.location.address" placeholder="Location for your event" />
                 <br />    
+                <div> {{event.name}} </div>
                 <label for="eventImageUrl">Image:</label>
-                <input id="eventImageUrl" type="url" class="input-xlarge" placeholder="url for image">
+                <input id="eventImageUrl" type="url" ng-model="event.imageUrl" class="input-xlarge" placeholder="url for image">
               </fieldset>
-              <img ng-src="{{image.imageUrl}}" src="" />
+              <img ng-src="{{event.imageUrl}}" src="" />
               <br />
               <br />
 
-              <button type="submit" class="btn btn-primary">Save</button>
-              <button type="button" class="btn btn-default">Cancel</button>
+              <button type="submit" ng-click="saveEvent(event)" class="btn btn-primary">Save</button>
+              <button type="button" ng-click="cancelEdit()" class="btn btn-default">Cancel</button>
           </form>
       </div>
     </div>
@@ -50,7 +51,7 @@
   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
   <script src="app.js"></script>
   <script src="controllers/EventController.js"></script>
-  <script type="controllers/EditEventController"></script>
+  <script src="controllers/EditEventController.js"></script>
   <script src="filter.js"></script>
 </body>
 
