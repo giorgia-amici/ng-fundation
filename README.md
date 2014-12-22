@@ -1,6 +1,5 @@
 ##**Angular Events Application**
 
-========================================================================
 
 This is a simple angular application built on a node server.
 
@@ -20,4 +19,10 @@ moduleName.filter('filterName', function(){
 
 ```
 
+Then in your HTML:
+
+```html
+{{yourScopeObject.yourScopePropertyToBeFiltered | filterName:"filterProperties"}}
+
 =======================================================
+
