@@ -8,7 +8,9 @@ eventsApp.controller('EventController',
       color: 'red'
     };
     $scope.buttonDisabled = false;
-    $scope.event = eventData.event;
+    eventData.getEvent(function(event){
+      $scope.event = event; 
+    });
  
     // with the  two methods below you actually manipulate the data according to your user input
     $scope.upVoteSession = function(session) {
