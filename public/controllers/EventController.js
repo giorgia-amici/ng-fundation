@@ -8,11 +8,13 @@ eventsApp.controller('EventController',
       color: 'red'
     };
     $scope.buttonDisabled = false;
-    eventData.getEvent(function(event){
-      $scope.event = event; 
-    });
+    eventData.getEvent().then(
+      function(event){$scope.event = event; },
+      // so above we set the object on the scope
+      function(statusCode){ cosole.log(statusCode); }
+      );
  
-    // with the  two methods below you actually manipulate the data according to your user input
+    // with the  two   methods below you actually manipulate the data according to your user input
     $scope.upVoteSession = function(session) {
       session.upVoteCount++;
     };
