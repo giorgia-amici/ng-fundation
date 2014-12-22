@@ -54,3 +54,12 @@ ngPattern
 
 You use ```ng-pattern``` in the broad context of __validations__ along with **regular expressions**
 Properties of your validations are: ```$dirty```, ```$pristine```, ```$invalid```, ```$valid```.
+
+
+```javascript
+
+ngCloak
+
+```
+
+The ```ngCloak``` directive is used to avoid the undesirable flicker effect caused by the html template display.
