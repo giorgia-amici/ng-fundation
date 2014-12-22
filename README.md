@@ -45,3 +45,12 @@ ngBindTemplate
 ```
 
 You use ```ng-bind-template``` if you need to add multiple things like: ```ng-bind-template="{{event.name}}{{event.date}}"```
+
+```javascript
+
+ngPattern
+
+```
+
+You use ```ng-pattern``` in the broad context of __validations__ along with **regular expressions**
+Properties of your validations are: ```$dirty```, ```$pristine```, ```$invalid```, ```$valid```.
