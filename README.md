@@ -27,3 +27,13 @@ Then in your HTML:
 ```
 =======================================================
 
+
+####**BUILT IN DIRECTIVES**
+
+```javascript
+
+ngBind
+
+```
+
+Instead of using ```{{event.name}}``` you can also use ```ng-bind="event.name"```
