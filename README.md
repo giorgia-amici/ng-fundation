@@ -37,3 +37,11 @@ ngBind
 ```
 
 Instead of using ```{{event.name}}``` you can also use ```ng-bind="event.name"```
+
+```javascript
+
+ngBindTemplate
+
+```
+
+You use ```ng-bind-template``` if you need to add multiple things like: ```ng-bind-template="{{event.name}}{{event.date}}"
