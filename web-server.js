@@ -18,6 +18,10 @@ app.get('/newEvent', function(request, response){
   response.render('newEvent')
 });
 
+app.get('/editProfile', function(request, response){
+  response.render('editProfile')
+});
+
 server.listen(3000, function(){
   console.log("Server listening on port 3000");
 });
