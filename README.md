@@ -7,7 +7,7 @@ In this application you can see, access, insert and modify any kind of event.
 
 
 
-- CUSTOMIZE FILETRS
+####**CUSTOMIZE FILETRS**
 
 ```javascript
 moduleName.filter('filterName', function(){
@@ -24,5 +24,6 @@ Then in your HTML:
 ```html
 {{yourScopeObject.yourScopePropertyToBeFiltered | filterName:"filterProperties"}}
 
+```
 =======================================================
 
