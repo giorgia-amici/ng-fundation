@@ -85,7 +85,7 @@ or not binding their responses directly to the scope(case possible with $resourc
 
     eventData.getEvent().then(
   	 	function(event){$scope.event = event; },
-      function(statusCode){ cosole.log(statusCode); }
+      function(statusCode){console.log(statusCode); }
      );
 
 
