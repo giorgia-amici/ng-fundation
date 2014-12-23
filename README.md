@@ -70,8 +70,8 @@ $resource or $http?
 
 ```
 
-The following are two example of fulfilling a GET request in Angular and decide wheather 
-or not binding them directly to the scope(case possible with $resource but not possible in the current version of Angular with $http). The first one uses the $resource service while the second one uses the $http service.
+The following are two examples of fulfilling a GET request in Angular and decide wheather 
+or not binding their responses directly to the scope(case possible with $resource but not possible in the current version of Angular with $http). The first one uses the $resource service while the second one uses the $http service.
 
 ```javascript
 
