@@ -9,7 +9,6 @@ var resource = $resource('/data/event/:id.json', {id: '@id'}, {"getAll": {method
       console.log(event)
       return resource.save(event);
     }
- 
 
       // BELOW IS THE ALTERNATIVE IF USING $HTTP
       // var deferred = $q.defer();
