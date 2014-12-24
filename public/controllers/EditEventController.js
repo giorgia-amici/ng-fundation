@@ -5,7 +5,7 @@ eventsApp.controller('EditEventController',
 
         $scope.saveEvent = function (event, form) {
             if(form.$valid) {
-                eventData.save(event)
+                eventData.save($scope.event)
                     .$promise.then(
                         function(response) { console.log('success', response)},
                         function(response) { console.log('failure', response)}

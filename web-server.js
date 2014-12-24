@@ -28,9 +28,9 @@ app.get('/editProfile', function(request, response){
 });
 
 app.post('/data/event/:id.json', function(request, response){
-    var event = request.body.event
-    console.log(event)
-  // response.render('index', {name: request.body.id});
+    // var event = request.body.event
+    // console.log(event)
+  response.render('/data/event/:id.json', {name: request.body});
 });
 
 
