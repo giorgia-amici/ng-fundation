@@ -7,8 +7,6 @@ var url = require('url')
 var events = require('events')
 var bodyParser = require('body-parser')
 
-
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
@@ -32,8 +30,6 @@ app.post('/data/event/:id.json', function(request, response){
     // console.log(event)
   response.render('/data/event/:id.json', {name: request.body});
 });
-
-
 
 server.listen(3000, function(){
   console.log("Server listening on port 3000");
