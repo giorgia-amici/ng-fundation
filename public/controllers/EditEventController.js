@@ -19,3 +19,5 @@ eventsApp.controller('EditEventController',
 
     }
 );
+
+
