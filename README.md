@@ -84,8 +84,7 @@ $locale
 
 ```
 
-The ```$locale``` service is used for localization of date, time and numeric formats.
-
+The ```$locale``` service is used for localization of date, time and numeric formats. Use it looking at [this doc](https://github.com/angular/code.angularjs.org/tree/master/1.0.2/i18n)
 
 
 ```javascript
