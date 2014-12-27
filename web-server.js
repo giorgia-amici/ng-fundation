@@ -27,7 +27,7 @@ app.get('/newEvent', function(request, response){
 });
 
 app.get('/editProfile', function(request, response){
-  response.render('editProfile')
+  response.render('editProfile')3
 });
 
 app.post('/data/event/:id.json', function(request, response){
