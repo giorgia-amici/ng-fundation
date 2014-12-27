@@ -1,11 +1,11 @@
 eventsApp.factory('eventData', function($resource) {
-var resource = $resource('/data/event/:id.json', {id: '@id'}, {"getAll": {method: "GET", isArray:true, params: {something: "foo"}}}); 
+var resource = $resource('/data/event/:id.json', {id: '@id'});
     return {
     getEvent: function() {
       return resource.get({id:1});
     },
     save: function(event){
-      event.id = 4;
+      event.id = 1;
       console.log(event.id)
       console.log(event)
       return resource.save(event);
