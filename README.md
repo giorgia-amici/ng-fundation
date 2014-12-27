@@ -67,6 +67,7 @@ ng-anchorScroll
 The ```ng-anchorScroll``` takes the id of an element belonging to a hash and it scrolls till that element.
 
 
+
 ```javascript
 
 ngCloak
@@ -74,6 +75,20 @@ ngCloak
 ```
 
 The ```ngCloak``` directive is used to avoid the undesirable flicker effect caused by the html template display.
+
+
+
+###Some Services
+
+```javascript
+
+$locale
+
+```
+
+The ```$locale``` service is used for localization of date, time and numeric formats.
+
+
 
 ```javascript
 
@@ -95,7 +110,7 @@ or not binding their responses directly to the scope(case possible with $resourc
 
 
     eventData.getEvent().then(
-  	 	 function (event) {$scope.event = event; },
+       function (event) {$scope.event = event; },
        function (statusCode){console.log(statusCode); }
      );
 
