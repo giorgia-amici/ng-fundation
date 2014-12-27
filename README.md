@@ -59,17 +59,6 @@ Properties of your validations are: ```$dirty```, ```$pristine```, ```$invalid``
 
 ```javascript
 
-ng-anchorScroll
-
-```
-
-
-The ```ng-anchorScroll``` takes the id of an element belonging to a hash and it scrolls till that element.
-
-
-
-```javascript
-
 ngCloak
 
 ```
@@ -79,6 +68,15 @@ The ```ngCloak``` directive is used to avoid the undesirable flicker effect caus
 
 
 ###Some Services
+
+```javascript
+
+$anchorScroll
+
+```
+
+
+The ```$anchorScroll``` service takes the id of an element belonging to a hash and it scrolls till that element.
 
 ```javascript
 
