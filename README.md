@@ -56,6 +56,17 @@ You use ```ng-pattern``` in the broad context of __validations__ along with **re
 Properties of your validations are: ```$dirty```, ```$pristine```, ```$invalid```, ```$valid```.
 
 
+
+```javascript
+
+ng-anchorScroll
+
+```
+
+
+The ```ng-anchorScroll``` takes the id of an element belonging to a hash and it scrolls till that element.
+
+
 ```javascript
 
 ngCloak

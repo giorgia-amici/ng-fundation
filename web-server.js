@@ -11,8 +11,6 @@ var mkdirp = require('mkdirp');
 
 
 
-
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
