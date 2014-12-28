@@ -104,8 +104,6 @@ or not binding their responses directly to the scope(case possible with $resourc
           function (response) {$console.log(response);}
         );
 
-
-
     eventData.getEvent().then(
        function (event) {$scope.event = event; },
        function (statusCode){console.log(statusCode); }
