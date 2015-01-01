@@ -14,8 +14,7 @@ eventsApp.controller('EditEventController',
         };
 
         // $scope.submit = function(){
-        //     $scope.list = []
-        //     $scope.
+        //     var newEvent = {name: $scope.event.name,  date: $scope.event.date, location: $scope.event.location.address, time: $scope.event.time}
         // }
 
         $scope.cancelEdit = function () {
