@@ -13,6 +13,11 @@ eventsApp.controller('EditEventController',
             }
         };
 
+        // $scope.submit = function(){
+        //     $scope.list = []
+        //     $scope.
+        // }
+
         $scope.cancelEdit = function () {
             window.location = "/EventDetails.html";
         };

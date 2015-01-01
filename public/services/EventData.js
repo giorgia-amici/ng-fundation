@@ -6,7 +6,6 @@ var resource = $resource('/data/event/:id.json', {id: '@id'});
     },
     save: function(event){
       event.id = 4;
-      console.log(event.id)
       console.log(event)
       return resource.save(event);
     }

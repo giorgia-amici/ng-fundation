@@ -27,12 +27,13 @@ app.get('/newEvent', function(request, response){
 });
 
 app.get('/editProfile', function(request, response){
-  response.render('editProfile')3
+  response.render('editProfile')
 });
 
 app.post('/data/event/:id.json', function(request, response){
   response.status(200).json(request.body);
 });
+
 
 server.listen(3000, function(){
   console.log("Server listening on port 3000");
