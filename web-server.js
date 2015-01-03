@@ -8,9 +8,6 @@ var events = require('events')
 var bodyParser = require('body-parser')
 var mkdirp = require('mkdirp');
 
-
-
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
