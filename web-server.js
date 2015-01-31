@@ -14,7 +14,6 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 
-
 app.get('/', function(request, response){
   response.render('index')
 });
@@ -30,7 +29,6 @@ app.get('/editProfile', function(request, response){
 app.post('/data/event/:id.json', function(request, response){
   response.status(200).json(request.body);
 });
-
 
 server.listen(3000, function(){
   console.log("Server listening on port 3000");

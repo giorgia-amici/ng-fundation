@@ -5,8 +5,6 @@ This is a simple angular application built on a node server.
 
 In this application you can see, access, insert and modify any kind of event.
 
-
-
 ####**CUSTOMIZE FILETRS**
 
 ```javascript
@@ -74,7 +72,6 @@ The ```ngCloak``` directive is used to avoid the undesirable flicker effect caus
 $anchorScroll
 
 ```
-
 
 The ```$anchorScroll``` service takes the id of an element belonging to a hash and it scrolls till that element.
 
