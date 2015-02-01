@@ -18,17 +18,14 @@ select, textarea {
     -ms-user-select: none;
     user-select: none;
 }
-
 .votingWidget {
   height: 64px;
   padding: 7px;
 }
-
 .votingButton {
   padding-left:6px;
   cursor:pointer;
 }
-
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none;
 }
